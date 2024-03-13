@@ -1,0 +1,165 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% 10%;
+}
+
+.column1 {
+    background-color: rgb(21, 21, 105);
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.column2 {
+    background-color: #f2f2f2;
+    flex: 1;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+/* Header styles */
+.name {
+    border-bottom: 2px solid rgb(21, 21, 105);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.name h1 {
+    font-size: 30px;
+    color: rgb(21, 21, 105);
+    margin: 10px 0;
+}
+
+.name p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Contact styles */
+.contact, .about, .languages {
+    background-color: rgb(21, 21, 105);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact h1, .about h1, .languages h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact p, .about p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.languages ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.languages ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Personal information styles */
+.personalinformation, .education, .skills {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.personalinformation h1, .education h1, .skills h1 {
+    font-size: 24px;
+    color: rgb(21, 21, 105);
+    margin-bottom: 10px;
+}
+
+.personalinformation ul, .education table, .skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.personalinformation ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.education table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.education th, .education td {
+    border: 1px solid rgb(21, 21, 105);
+    padding: 8px;
+    text-align: left;
+}
+
+.education th {
+    background-color: rgb(21, 21, 105);
+    color: white;
+}
+
+/* Skills styles */
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills ul li {
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: rgb(21, 21, 105);
+    color: white;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (min-width: 768px) {
+    .container {
+        margin: 5% 5%;
+    }
+    
+    .column1 {
+        width: 30%;
+        max-width: 350px;
+        margin-right: 20px;
+    }
+    
+    .column2 {
+        width: 65%;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .column1, .column2 {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+}
